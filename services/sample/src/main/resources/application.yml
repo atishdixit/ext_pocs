@@ -1,0 +1,13 @@
+server:
+  port: ${SERVER_PORT:3000}
+
+spring:
+  profiles:
+    active: ${ACTIVE_PROFILE:dev}
+
+logging:
+  pattern:
+    console: "%d %p %C{1.} %m%n"
+  level:
+    root: info
+    com.info.sam: ${LOG_LEVEL:DEBUG}
